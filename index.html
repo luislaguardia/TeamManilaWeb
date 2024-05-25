@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resto</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body onload="showContent('homepage')">
+
+<header class="header-container">
+  <div class="logo-container">
+    <img src="luisicon.png" alt="Team Manila" class="logo">
+    <span class="restaurant-name"><strong>Team Manila</strong></span>
+  </div>
+  <nav class="navigation">
+    <a href="#" class="nav-link" onclick="showContent('homepage')">Home</a>
+    <a href="#" class="nav-link" onclick="showContent('shop')">Shop</a>
+    <a href="#" class="nav-link" onclick="showContent('aboutus'); darkenBackground()">About us</a>
+    <a href="#" class="nav-link" onclick="showContent('contact'); darkenBackground()">Contact</a>
+  </nav>
+</header>
+
+<div id="homepage" class="content">
+  <h1 style="text-align: center; color: black; font-size: 46px;"><strong>Welcome to Team Manila Web Page</strong></h1>
+  <h3 style="text-align: center; color: black; font-size: 30px;"><strong>Maayong Gabi, here are our special deals!</strong></h3>
+  <div class="grid-container">
+    <div class="item">
+      <p style="text-align: center;">50% Off Discount / Best Deal in the market!</p>
+      <h3 style="text-align: center;">Classy 90s Style Clothing </h3>
+      <p style="text-align: center;">Price: <strong>200PHP</strong></p>
+    </div>
+    <div class="item">
+      <p style="text-align: center;">Team Manila's Top Selling Product</p>
+      <h3 style="text-align: center;">Jose Rizal inspired T-Shirt</h3>
+      <p style="text-align: center;">Price: <strong>250PHP</strong></p>
+    </div>
+    <div class="item">
+      <p style="text-align: center;">80s Style Pants</p>
+      <h3 style="text-align: center;">Unique Rizal's Pants</h3>
+      <p style="text-align: center;">Price: <strong>500PHP</strong></p>
+    </div>
+  </div>
+</div>
+<div id="shop" class="content">
+  <h2 style="text-align: center; color: black; font-size: 34px;"><strong>Shop</strong></h2>
+  <div class="menu-grid">
+    <div class="item shirt1" onmouseover="showTooltip('shirt1')" onmouseout="hideTooltip('shirt1')">
+      <div class="item-content">
+        <div class="image-container">
+          <img src="shirt1.jpg" alt="Shirt 1">
+        </div>
+        <div class="description">
+          <h3>Shirt 1</h3>
+          <p>Price: 200 PHP</p>
+        </div>
+      </div>
+      <div class="tooltip" id="tooltip-shirt1">
+        <img src="shirt1.jpg" alt="Shirt 1">
+        <p>Description: Team Manila LifeStyle <br>Celebrating Filipino Culture</p>
+        <p>Material: Cotton</p>
+        <p>Size: S, M, L, XL</p>
+
+      </div>
+    </div>
+
+    <!-- Shirt 2 -->
+    <div class="item shirt2" onmouseover="showTooltip('shirt2')" onmouseout="hideTooltip('shirt2')">
+      <div class="item-content">
+        <div class="image-container">
+          <img src="shirt2.jpg" alt="Shirt 2">
+        </div>
+        <div class="description">
+          <h3>Shirt 2</h3>
+          <p>Price: 250 PHP</p>
+        </div>
+      </div>
+      <div class="tooltip" id="tooltip-shirt2">
+        <img src="shirt2.jpg" alt="Shirt 2">
+        <p>Description: Team Manila Jose Rizal Tshirt</p>
+        <p>Material: Cotton</p>
+        <p>Size: XS, S, M, L</p>
+      </div>
+    </div>
+
+    <!-- Shirt 3 -->
+    <div class="item shirt3" onmouseover="showTooltip('shirt3')" onmouseout="hideTooltip('shirt3')">
+      <div class="item-content">
+        <div class="image-container">
+          <img src="shirt3.jpg" alt="Shirt 3">
+        </div>
+        <div class="description">
+          <h3>Shirt 3</h3>
+          <p>Price: 350 PHP</p>
+        </div>
+      </div>
+      <div class="tooltip" id="tooltip-shirt3">
+        <img src="shirt3.jpg" alt="Shirt 3">
+        <p>Description: Team Manila Goods Lang Tshirt</p>
+        <p>Material: Cotton</p>
+        <p>Size: XS, S, M, L</p>
+      </div>
+    </div>
+
+    <!-- Shirt 4 -->
+    <div class="item shirt4" onmouseover="showTooltip('shirt4')" onmouseout="hideTooltip('shirt4')">
+      <div class="item-content">
+        <div class="image-container">
+          <img src="shirt4.jpg" alt="Shirt 4">
+        </div>
+        <div class="description">
+          <h3>Shirt 4</h3>
+          <p>Price: 400 PHP</p>
+        </div>
+      </div>
+      <div class="tooltip" id="tooltip-shirt4">
+        <img src="shirt4.jpg" alt="Shirt 4">
+        <p>Description: Team Manila Spectrum Tshirt</p>
+        <p>Material: Cotton</p>
+        <p>Size: M, L, XL</p>
+      </div>
+    </div>
+
+    <!-- Shirt 5 -->
+    <div class="item shirt5" onmouseover="showTooltip('shirt5')" onmouseout="hideTooltip('shirt5')">
+      <div class="item-content">
+        <div class="image-container">
+          <img src="shirt5.jpg" alt="Shirt 5">
+        </div>
+        <div class="description">
+          <h3>Shirt 5</h3>
+          <p>Price: 550 PHP</p>
+        </div>
+      </div>
+      <div class="tooltip" id="tooltip-shirt5">
+        <img src="shirt5.jpg" alt="Shirt 5">
+        <p>Description: Team Manila Black Red Tshirt</p>
+        <p>Material: Cotton</p>
+        <p>Size: XS, S, M, L</p>
+      </div>
+    </div>
+
+    <!-- Shirt 6 -->
+    <div class="item shirt6" onmouseover="showTooltip('6')" onmouseout="hideTooltip('shirt6')">
+      <div class="item-content">
+        <div class="image-container">
+          <img src="shirt6.jpg" alt="Shirt 6">
+        </div>
+        <div class="description">
+          <h3>Shirt 6</h3>
+          <p>Price: 650 PHP</p>
+        </div>
+      </div>
+      <div class="tooltip" id="tooltip-shirt6">
+        <img src="shirt6.jpg" alt="Shirt 6">
+        <p>Description: Manila Maintain Tshirt</p>
+        <p>Material: Cotton</p>
+        <p>Size: XS, S, M, L</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    
+<div id="aboutus" class="content">
+  <div class="about-us-container">
+    <h2>About Me</h2>
+    <p>This is for my requirement in Web System and Technologies</p>
+    <hr>
+    <h3>
+      <blockquote> Hi, I am<span style="color:red;"> <strong> Luis Laguardia </strong></span> from INF-226, I am studying at National University Philippines.<br/>
+      </blockquote>
+    </h3>
+    <p style="font-size: 16px; font-family: Arial, sans-serif; margin-bottom: 10px;">
+      I am currently studying BSIT major in <code><strong>Mobile and Web Applications </strong></code>in National University - Manila, for this <i>"my web page" </i>I am creating is for my Web System Technologies subject and this is our laboratory activity 1. For the past 2 years I have been studying in National University has been a great experience for me and I learned a lot about java, python, and android development. I am particularly interested in this subject I am taking about Web Systems.</p>
+    <p><strong>THANK YOU FOR TAKING TIME TO READ</strong> :)</p>
+  </div>
+</div>
+
+
+
+   <div id="contact" class="content">
+  <div class="contact-container">
+    <h1><span style="color: red;">How to contact<strong> me?</strong></span></h1>
+    <h3>Luis Gabriel H. Laguardia</h3>
+    <p><span style="color: DarkBlue;"><strong><em>- National University Manila -</em></strong></span></p>
+    <h3>Email: laguardialh@students.national-u.edu.ph</h3>
+    <h3>Landline: +649323524</h3>
+    <h3>Cell number: +639491564035</h3>
+    <h3><a href="https://www.instagram.com/_luislaguardia/" target="_blank"><strong>Instagram</strong></a></h3>
+    <h3><a href="https://www.facebook.com/awit.lucas/" target="_blank"><strong>Facebook</strong></a></h3>
+  </div>
+</div>
+
+
+<br>
+
+<div id="proceedButton" class="proceed-button" style="display: none;">
+  <button class="shop" onclick="showContent('shop')">Proceed to Shop</button>
+</div>
+s
+<script>
+  function showContent(selectedOption) {
+    var contentDivs = document.getElementsByClassName("content");
+    for (var i = 0; i < contentDivs.length; i++) {
+      contentDivs[i].style.display = "none";
+    }
+    document.getElementById(selectedOption).style.display = "block";
+    
+    if (selectedOption === 'homepage') {
+      document.getElementById('proceedButton').style.display = "block";
+    } else {
+      document.getElementById('proceedButton').style.display = "none";
+    }
+  }
+
+  function placeOrder() {
+    var confirmation = confirm("This site will redirect you now. Do you want to proceed?");
+    if (confirmation) {
+      window.open("unfinised.html", "_blank"); 
+    }
+  }
+
+  function filterMenu() {
+    var chickenChecked = document.getElementById("chickenCheckbox").checked;
+    var fishChecked = document.getElementById("fishCheckbox").checked;
+    var porkChecked = document.getElementById("porkCheckbox").checked;
+    var beefChecked = document.getElementById("beefCheckbox").checked;
+    var pastaChecked = document.getElementById("pastaCheckbox").checked;
+    var veganChecked = document.getElementById("veganCheckbox").checked;
+    var beveragesChecked = document.getElementById("beveragesCheckbox").checked;
+
+    var menuItems = document.querySelectorAll(".menu-grid .item");
+
+    if (!chickenChecked && !fishChecked && !porkChecked &&
+        !beefChecked && !pastaChecked && !veganChecked && !beveragesChecked) {
+      menuItems.forEach(function(item) {
+        item.style.display = "block";
+      });
+      return;
+    }
+
+    menuItems.forEach(function(item) {
+      if ((chickenChecked && item.classList.contains('chicken')) ||
+          (fishChecked && item.classList.contains('fish')) ||
+          (porkChecked && item.classList.contains('pork')) ||
+          (beefChecked && item.classList.contains('beef')) ||
+          (pastaChecked && item.classList.contains('pasta')) ||
+          (veganChecked && item.classList.contains('vegan')) ||
+          (beveragesChecked && item.classList.contains('beverages'))) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
+
